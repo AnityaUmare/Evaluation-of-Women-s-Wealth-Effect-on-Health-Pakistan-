@@ -1,0 +1,33 @@
+**descriptive Statistics**
+desc
+
+**Summary statistics**
+sum
+
+**keeping the required variables**
+keep v102 v106 v113 v116 v119 v159 v161 v190 v221 v219 v394 v445 v714 s924a s1107a
+desc
+sum
+
+**regression OLS**
+reg v445 v190 v102 v106 v113 v116 v119 v161 v219 v221 v394 v714 s1107a
+
+**categorical variable information**
+tab v159
+
+**Changing it into Dummy variable (Instrumental variable)**
+recode v159 (0/1=0) (2=1), gen(TV)
+
+**Two-stage least squares**
+ivregress 2sls v445 v102 v106 v113 v116 v119 v161 v219 v221 v394 v714 s1107a (v190 = TV)
+
+**2sls robust**
+ivregress 2sls v445 v102 v106 v113 v116 v119 v161 v219 v221 v394 v714 s1107a (v190 = TV)
+
+**Robustness Check**
+estat firststage
+estat endogenous
+
+**2sls robust**
+ivregress 2sls v445 v102 v106 v113 v116 v119 v161 v219 v221 v394 v714 s1107a (v190 = TV), robust
+

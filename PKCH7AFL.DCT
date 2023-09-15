@@ -1,0 +1,34 @@
+infix dictionary using "C:\Countries\PK7A\PKCH7AFL.DAT" {
+1 lines
+    int      qhclust     1:   1-4   
+    int      qhnumber    1:   5-8   
+    byte     qline       1:   9-10  
+    byte     q212        1:  11-12  
+    byte     q212a       1:  13-13  
+    byte     q212b       1:  14-14  
+    byte     q212c       1:  15-15  
+    byte     q213        1:  16-16  
+    byte     q215d       1:  17-18  
+    byte     q215m       1:  19-20  
+    int      q215y       1:  21-24  
+    byte     q216        1:  25-25  
+    byte     q217        1:  26-27  
+    byte     q218        1:  28-28  
+    byte     q219        1:  29-30  
+    byte     q220u       1:  31-31  
+    byte     q220n       1:  32-33  
+    byte     q220abd     1:  34-35  
+    byte     q220abm     1:  36-37  
+    int      q220aby     1:  38-41  
+    byte     q220ac      1:  42-43  
+    byte     q220ad      1:  44-44  
+    byte     q221        1:  45-45  
+    byte     qlast3      1:  46-46  
+    int      q215c       1:  47-50  
+    long     q215cd      1:  51-55  
+    byte     q215di      1:  56-57  
+    byte     q215f       1:  58-58  
+    int      q220c       1:  59-61  
+    byte     q220f       1:  62-62  
+    byte     pregout     1:  63-63  
+}
